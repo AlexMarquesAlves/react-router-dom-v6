@@ -3,3 +3,18 @@
   list-style: none;
   gap: 1.6rem;
 }
+.menu ul li a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.menu ul li {
+  padding: .55rem;
+  border-radius: 10px 100px / 120px;
+  background-color: hsl(0, 59%, 41%);
+  animation: ease-in-out 3s;
+}
+
+.menu ul li:hover {
+  background-color: hsl(0, 59%, 31%);
+  transform: scale(1.1);
+}

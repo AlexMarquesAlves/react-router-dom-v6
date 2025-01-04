@@ -16,7 +16,10 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/posts/:id" element={<Post />} />
+        {/* <Route path="/posts/:id" element={<Post />} /> */}
+        <Route path="/posts" element={<Post />}>
+          <Route path=":id" element={<h1>Hello, World</h1>} />
+        </Route>
         <Route path="/posts" element={<Post />} />
         <Route path="/redirect" element={<Redirect />} />
         <Route path="*" element={<NotFound />} />

@@ -1,0 +1,9 @@
+div {
+  margin-top: 2rem;
+}
+
+div h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

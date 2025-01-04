@@ -1,5 +1,9 @@
 import './style.css';
 
 export const NotFound = () => {
-  return <h1>Page Not Found! 😔</h1>;
+  return (
+    <div>
+      <h1>Page Not Found! 😔</h1>
+    </div>
+  );
 };
