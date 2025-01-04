@@ -14,8 +14,8 @@ export const Redirect = () => {
     }, 1000);
 
     if (time < 0) {
-      navigate('/', {
-        state: `this is the state: ${Number((Math.random() * 11).toFixed())}`,
+      navigate('/about', {
+        state: `This is the state from REDIRECT: ${(Math.random() * 10).toFixed()}`,
       });
     }
 
