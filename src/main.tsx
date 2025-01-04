@@ -7,6 +7,7 @@ import { Home } from './components/Home/index.tsx';
 import { Menu } from './components/Menu/index.tsx';
 import { NotFound } from './components/NotFound/index.tsx';
 import { Post } from './components/Post/index.tsx';
+import { Posts } from './components/Posts/index.tsx';
 import { Redirect } from './components/Redirect/index.tsx';
 
 createRoot(document.getElementById('root')!).render(
@@ -17,8 +18,8 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         {/* <Route path="/posts/:id" element={<Post />} /> */}
-        <Route path="/posts" element={<Post />}>
-          <Route path=":id" element={<h1>Hello, World</h1>} />
+        <Route path="/posts" element={<Posts />}>
+          <Route path=":id" element={<Post />} />
         </Route>
         <Route path="/posts" element={<Post />} />
         <Route path="/redirect" element={<Redirect />} />
